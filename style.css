@@ -1,0 +1,77 @@
+
+.contenedorPadre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorImagenes ul {
+    display: flex; 
+    padding: 20px;
+    margin: 20px;
+    list-style: none;
+}
+
+.contenedorImagenes ul li {
+    margin-top: 0%;
+    margin-right: 3px;
+}
+
+.contenedorImagenes p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.contenedorAudios {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.texto{
+    margin-right: 80%;
+    margin-top: 1%;
+}
+
+.contenedorAudios p{
+    text-align: center;
+    color: black;
+    font-weight: bold;    
+}
+.foto1, .foto2, .foto3{
+    width: 100%;
+}
+
+.foto1:hover:hover {
+    z-index: 1;
+    width: 200%; 
+    max-height: 47%;
+    position: relative; 
+    transition: width 5s;
+}
+
+@keyframes animacionFoto3 {
+    25% {
+        transform: rotate(45deg); 
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    75% {
+        border: 2px solid red; 
+    }
+    100% {
+        transform: translateY(100px); 
+    }
+}
+
+.contenedorImagenes ul li:last-child .foto3:hover:hover {
+    animation: animacionFoto3 15s infinite; 
+}
+
+
+
+
+
